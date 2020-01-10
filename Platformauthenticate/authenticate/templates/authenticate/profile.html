@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        .section {
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    Username: {{ user.username }}
+    <br>
+    First Name: {{ user.first_name }} &nbsp;
+    Last Name: {{ user.last_name }}
+    <br>
+    Email: {{ user.email }}
+    <br>
+    <a href="{% url 'authenticate:logout' %} " class='btn btn-primary'> Log Out</a>
+</div>
+</body>
+</html>

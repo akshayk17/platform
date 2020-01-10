@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .section {
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    <h1>SignUp</h1>
+
+    <form action="" method="post" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Sign Up" class="btn btn-primary">
+
+    </form>
+</div>
+</body>
+</html>
